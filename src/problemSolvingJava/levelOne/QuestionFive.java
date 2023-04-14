@@ -1,4 +1,4 @@
-package problemSolving.levelOne;
+package problemSolvingJava.levelOne;
 //Given the string “Mississippi”, find the number of occurrences of character ’s’ and character ‘i’.
 
 public class QuestionFive {

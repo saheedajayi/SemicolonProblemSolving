@@ -1,7 +1,7 @@
-package problemSolving.levelOne;
+package problemSolvingJava.levelOne;
 
 public class QuestionOne {
-    public int secondLargestInput(int... b){
+    public static int secondLargestInput(int... b){
         int largest = 0;
         int secondLargest = 0;
         for(int i : b){
@@ -18,5 +18,10 @@ public class QuestionOne {
         }
         return secondLargest;
     }
+
+    public static void main(String[] args) {
+        System.out.println(secondLargestInput(1, 2, 3, 4, 5, 6));
+    }
+
 
 }

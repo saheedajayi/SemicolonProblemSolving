@@ -1,4 +1,4 @@
-package problemSolving.levelTwo;
+package problemSolvingJava.levelTwo;
 /*
 
  */
@@ -8,19 +8,15 @@ public class QuestionFour {
         int length = arr.length - 1;
         int firstUnique = 0;
 
-        for (int i = 0; i <= length ; i++) {
-            int temp = arr[i];
-            for(int j = 0; j<=length; j++){
-                if(i == j){
-                    continue;
-                }
-                if(temp == arr[j]){
-                    firstUnique = temp;
-                    break;
+        for (int i = 0; i < length ; i++) {
+            for(int j = 0; j<length; j++){
+                if(arr[i] != arr[j]){
+                    firstUnique = arr[i];
                 }
             }
         }
         return firstUnique;
+
     }
 
     public static void main(String[] args) {
